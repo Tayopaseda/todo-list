@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo $(ENVIRONMENT_VARIABLE)
+- script: echo $ENVIRONMENT_VARIABLE
   displayName: 'Run a one-line script'
   env:
     ENVIRONMENT_VARIABLE: $(SECRET_VARIABLE)
