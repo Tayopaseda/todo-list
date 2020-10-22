@@ -1,8 +1,8 @@
 trigger:
 - master
 
-variables:
-- group: todoVars
+# variables:
+# - group: todoVars
 
 pool:
   vmImage: 'ubuntu-latest'
