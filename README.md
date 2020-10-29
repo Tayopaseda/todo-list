@@ -1,1 +1,3 @@
- uresfgthjuikifafregwausbfdiuwbcFbababooie bababooie bababooie
+# Todo List
+
+Super simple todo app built in Python.
