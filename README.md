@@ -4,6 +4,19 @@ Super simple todo app built in Python.
 
 ## Prerequisites
 
+First, install pip:
+
+```bash
+sudo apt update
+sudo apt install python3-pip -y
+```
+
+Install the pip requirements (make sure you're in the repo root directory):
+
+```bash
+pip3 install -r requirements.txt
+```
+
 You need to set the database URI that the app needs to connect to and a secret key. This is done via *environment variables*.
 
 ```bash
