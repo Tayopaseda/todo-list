@@ -3,6 +3,6 @@ Description=Todo List
 [Service]
 User=jenkins
 WorkingDirectory=/opt/todo-list
-ExecStart=/bin/bash -c 'cd /users/jenkins/todo-list source ./venv/bin/activate && python3 app.py'
+ExecStart=/bin/bash -c 'cd /opt/todo-list && source ./venv/bin/activate && python3 app.py'
 [Install]
 WantedBy=multi-user.target
