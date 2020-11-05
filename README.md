@@ -86,3 +86,14 @@ pip3 install pytest pytest-cov flask_testing
 pip3 install -r requirements.txt
 python3 -m pytest --doctest-modules --junitxml=junit/test-results.xml --cov=application --cov-report=xml --cov-report=html
 ```
+
+## Running as a Systemd Service (Background Service)
+
+The `deploy.sh` script contains the commands required to run the application as a `systemd` service which will run in the background. It will generate a `systemd` service script with the required environment variables.
+
+You will still need to set your `DATABASE_URI` and `SECRET_KEY` environment variables as described above before running the script
+
+The command to run the script is:
+```bash
+bash deploy.sh
+```
