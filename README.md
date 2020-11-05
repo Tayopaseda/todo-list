@@ -74,4 +74,14 @@ python3 -m pytest --doctest-modules --junitxml=junit/test-results.xml --cov=appl
 
 This will generate reports that are readable by JUnit and Cobertura.
 
-Hello WOrld!
+For your Jenkins jobs:
+
+```bash
+#!/bin/bash
+sudo apt update 
+sudo apt install python3 python3-pip -y
+export DATABASE_URI=sqlite:///data.db
+export SECRET_KEY=osiadniowdj
+pip3 install pytest pytest-cov flask_testing
+python3 -m pytest --doctest-modules --junitxml=junit/test-results.xml --cov=application --cov-report=xml --cov-report=html
+```
