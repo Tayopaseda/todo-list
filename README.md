@@ -98,4 +98,4 @@ The command to run the script is:
 bash deploy.sh
 ```
 
-bababooie
+bababooie bababooie
